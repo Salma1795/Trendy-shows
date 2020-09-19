@@ -1,0 +1,11 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let serie of trendingWeeklySeries" class="col-md-3">
+            <div class="tv">
+                <img [src]="imagePrefix + serie.poster_path" class="img-fluid">
+                <h4>{{tv.name}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

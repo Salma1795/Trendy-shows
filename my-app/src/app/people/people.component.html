@@ -1,0 +1,11 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let person of trendingWeeklyPeople" class="col-md-3">
+            <div class="person">
+                <img [src]="imagePrefix + person.profile_path" class="img-fluid">
+                <h4>{{person.name}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
